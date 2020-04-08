@@ -5,7 +5,7 @@ def join_nested_strings(src)
   count = 0
   src.length.times do |index1|
     src[index1].length.times do |index2|
-      if src[index1][index2].is_a? String
+      if src[index1][index2].to_s = src[index1][index2]
         array[count] = src[index1][index2]
         count += 1
       end
